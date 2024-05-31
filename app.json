@@ -22,7 +22,7 @@
     "AUTO_READ_STATUS":
     {
       "description":"Your contact status will be read automatically(type yes to active or no to deactive  ; don't write in capital letter)",
-      "value":"yes",
+      "value":"no",
       "required":false
     }, "AUTO_DOWNLOAD_STATUS":
     {
@@ -34,8 +34,8 @@
      "PM_PERMIT" :
      {
       "description":"Other user can't use your bot in pm (type yes to active or no to deactive ; don't write in capital letter)",
-      "value":"no",
-      "required":false
+      "value":"yes",
+      "required": true 
     }
     ,
     "BOT_NAME" : {
@@ -55,8 +55,8 @@
     "PUBLIC_MODE":
     {
       "description":"type yes to put your bot on public mode or no to put it on private mod",
-      "value":"no",
-      "required":false
+      "value":"yes",
+      "required":true
     }
         ,
     "HEROKU_API_KEY": {
@@ -71,15 +71,15 @@
     "SESSION_ID":
     {
       "description":"put your session ID, AMKE SURE IT STARTS WITH FLASH-MD-WA-BOT;;;=>",   
-      "value":"",
+      "value":"FLASH-MD-WA-BOT;;;=>eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiZ0F6T3VjVlVBNFNkcUFDTEJNcDROWEdFQlJOakJyelpCT0lkSUFEV0trWT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoienJoaHJKWXgwRDJmZzBlWG52OFZYemNqVElRVmY3SlJiOTM0VjBHSFhtaz0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJvUFBIdDgzVWIwbHFlVHJuRUEydFo0NjZQb2ZPejdkaEdrTG9iN3E4NTB3PSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJQTTd3clJ5Y0tTYUpVaUNWNDEwbmRDQzRpZkxiQzc3eDhvV0Vid3M0SkNVPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjhKcDdWZHIyS1FwbVVRU0dncG5sS29GUzRpZXU2aUs2QVY5OENhZ0p5azQ9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6InkvSVBNeWdEdE9tSjVSQmpoRkNLNEJtdEZTekpWWi9XQlZFVmtxOFJrd2c9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQUhUQ1EybU5OUlpMRkxFMS9OWTlmbFIrUWVPSThPWTNRU2lrYmxwbVFGaz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoid1ZmemFERnJNYXdtNVVYMDhraEFLOWo4NTQwc1dXenBlazRncFZaRmRSOD0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6InlQK2ErRGtscEgvMlRLNnV2YXhlMjBWT3VCRHdPU2NBUm8vL3VudUo2RXJ0V3dKZlg2d0V5RmdhVk9lbjkza2VZSXYvTm43MWVONkFsaXdLTzhsSWpRPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6OCwiYWR2U2VjcmV0S2V5IjoidmR2ZVZCek9QT0RGVmJIRlFUSzNsWk85aGdSZnJzNnZzUXhzdkp5ajkyRT0iLCJwcm9jZXNzZWRIaXN0b3J5TWVzc2FnZXMiOlt7ImtleSI6eyJyZW1vdGVKaWQiOiIyMzQ4MTM3OTY1MDkzQHMud2hhdHNhcHAubmV0IiwiZnJvbU1lIjp0cnVlLCJpZCI6IjAwMzMyMzYwQjkzOUU3RURDMjc4Qjk1MjJEMzk0QzgxIn0sIm1lc3NhZ2VUaW1lc3RhbXAiOjE3MTcxOTEwMDJ9LHsia2V5Ijp7InJlbW90ZUppZCI6IjIzNDgxMzc5NjUwOTNAcy53aGF0c2FwcC5uZXQiLCJmcm9tTWUiOnRydWUsImlkIjoiMEU5Rjk1OTlGMTk4N0IyMzMwRDMwMEE5MTg1ODIyNDgifSwibWVzc2FnZVRpbWVzdGFtcCI6MTcxNzE5MTAwMn0seyJrZXkiOnsicmVtb3RlSmlkIjoiMjM0ODEzNzk2NTA5M0BzLndoYXRzYXBwLm5ldCIsImZyb21NZSI6dHJ1ZSwiaWQiOiI2Q0VFRENENDA5RDhBM0Q2NjdBRjJFNDI5NkQ0NDQwOSJ9LCJtZXNzYWdlVGltZXN0YW1wIjoxNzE3MTkxMDA0fSx7ImtleSI6eyJyZW1vdGVKaWQiOiIyMzQ4MTM3OTY1MDkzQHMud2hhdHNhcHAubmV0IiwiZnJvbU1lIjp0cnVlLCJpZCI6IkU5QkMzQzBBN0JFQTdGOENBM0U4REU0N0NFRTc0MzJEIn0sIm1lc3NhZ2VUaW1lc3RhbXAiOjE3MTcxOTEwMDR9XSwibmV4dFByZUtleUlkIjozMSwiZmlyc3RVbnVwbG9hZGVkUHJlS2V5SWQiOjMxLCJhY2NvdW50U3luY0NvdW50ZXIiOjEsImFjY291bnRTZXR0aW5ncyI6eyJ1bmFyY2hpdmVDaGF0cyI6ZmFsc2V9LCJkZXZpY2VJZCI6InpDd2dBT0RjUl9hY0dLRjd2ZC1OR2ciLCJwaG9uZUlkIjoiYzNlNDMzNzQtZDE1OC00ZmJiLTkwNGQtYjNhYzUzMTk2OTI5IiwiaWRlbnRpdHlJZCI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkxaOFBKVXpRdE1NL2JYclFXQVRSYXBBR1lSaz0ifSwicmVnaXN0ZXJlZCI6dHJ1ZSwiYmFja3VwVG9rZW4iOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJieFZ1U0p3dkpqUnlZMFl0bHkvaTNFR3Q0QVk9In0sInJlZ2lzdHJhdGlvbiI6e30sInBhaXJpbmdDb2RlIjoiNTlWSjlFVkYiLCJtZSI6eyJpZCI6IjIzNDgxMzc5NjUwOTM6MUBzLndoYXRzYXBwLm5ldCIsIm5hbWUiOiJJLk1vbW9kdSdzIEJvdCJ9LCJhY2NvdW50Ijp7ImRldGFpbHMiOiJDSisxdVpBR0VNdUM2YklHR0FFZ0FDZ0EiLCJhY2NvdW50U2lnbmF0dXJlS2V5IjoiZXBGd0p5V2JPNGZDS256R3lIcUpTZ201VXQzMWoxK2REOUNyK2dScDZqQT0iLCJhY2NvdW50U2lnbmF0dXJlIjoicUU2UU0waWVSU1p3d0libWdzSC9OWC9LRUNMY045R3pjVnZ3MzlBdDFZelNKaGxNRlBNVEFmdE11OW1CQWNrdzZWK0psbW1wTTVEemRZWEhMalptQXc9PSIsImRldmljZVNpZ25hdHVyZSI6Ilo5QzNucFhnNzVLYWlnK1JoaGU1ZVNlalhiaDF4bHRZaEpzOFE5WklGTGlJS2hzZTY3T0MwMDN3NGNNR084UENXUDdqSlU2Z21hSzNIdzYxaXJFcmhRPT0ifSwic2lnbmFsSWRlbnRpdGllcyI6W3siaWRlbnRpZmllciI6eyJuYW1lIjoiMjM0ODEzNzk2NTA5MzoxQHMud2hhdHNhcHAubmV0IiwiZGV2aWNlSWQiOjB9LCJpZGVudGlmaWVyS2V5Ijp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQlhxUmNDY2xtenVId2lwOHhzaDZpVW9KdVZMZDlZOWZuUS9RcS9vRWFlb3cifX1dLCJwbGF0Zm9ybSI6ImFuZHJvaWQiLCJsYXN0QWNjb3VudFN5bmNUaW1lc3RhbXAiOjE3MTcxOTEwMDAsIm15QXBwU3RhdGVLZXlJZCI6IkFBQUFBRnBJIn0=",
       "required": true
 
     },
     "OWNER_NAME":
     {
 
-    "desc": "Your Name",
-    "required": false,
+    "desc": "I.Momodu",
+    "required": true,
     "value": "France King"
   },
     "OWNER_NUMBER":
@@ -87,7 +87,7 @@
 
     "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
     "required":false,
-    "value": "254751284190"
+    "value": "2348137965093"
   },
     "WARN_COUNT":
   {
@@ -98,8 +98,8 @@
     "CHAT_BOT":
     {
       "desc": "Put yes to allow the bot to chat with people who text you or put no if you don't want the bot to chat with people",
-      "required": false, 
-       "value": "no" 
+      "required": true, 
+       "value": "yes" 
     }, 
   "STARTING_BOT_MESSAGE":
   {
